@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tuur Bellers — Game Developer</title>
+  <meta name="description" content="Gameplay & AI programming student at Howest DAE."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <h1>Hi, I’m <span class="accent">Tuur Bellers</span></h1>
+    <p class="lead">Gameplay & AI programming · Howest Digital Arts & Entertainment</p>
+    <p class="muted">C++, C# · Unity · Unreal Engine</p>
+
+    <div class="cta">
+      <!-- replace CV.pdf with your actual file name if you add it -->
+      <a class="btn" href="CV.pdf" target="_blank">Download CV</a>
+      <!-- replace with your profiles -->
+      <a class="btn ghost" href="https://github.com/tuurbellers" target="_blank">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/tuur-bellers" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Project 1 -->
+      <article class="card">
+        <h3>Utility AI – Autonomous Agent (C++)</h3>
+        <p class="summary">Project focused on developing a hybrid FSM and Utility AI system for autonomous agent decision-making in a zombie survival game.</p>
+        <p>Created real-time behaviors for exploration, item use, and combat with contextual scoring and clear state transitions.</p>
+        <div class="tags"><span>C++</span><span>AI</span><span>Systems</span></div>
+        <!-- add your repo link if public -->
+        <a class="btn tiny" href="#" target="_blank">Code</a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <h3>Shrimpact (Unity)</h3>
+        <p class="summary">Team game project — one of three programmers collaborating with art & tech art.</p>
+        <p>Built environmental mechanics and a lightweight background fish-school AI to enhance atmosphere and match flow.</p>
+        <div class="tags"><span>Unity</span><span>Gameplay</span><span>Team</span></div>
+        <a class="btn tiny" href="https://jelleadyns.itch.io/shrimpact" target="_blank">Itch.io</a>
+      </article>
+
+      <!-- Add more project cards as needed -->
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a game developer who enjoys building responsive gameplay systems and the AI that makes worlds feel alive.
+        Currently doing graduation work on AI for games at Howest DAE. Comfortable working in teams and iterating quickly.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="links">
+        <li><a href="mailto:tuur.bellers@gmail.com">tuur.bellers@gmail.com</a></li>
+        <li><a href="https://github.com/tuurbellers" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tuur-bellers" target="_blank">LinkedIn</a></li>
+        <!-- add Itch if you want -->
+        <!-- <li><a href="https://tuurbellers.itch.io" target="_blank">Itch.io</a></li> -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <small>&copy; <span id="y"></span> Tuur Bellers · theme: minimal</small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
