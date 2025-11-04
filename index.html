@@ -1,47 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Home — Tuur Bellers</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css"/><script defer src="script.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container navrow">
-      <a class="brand" href="index.html">Tuur Bellers</a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Résumé</a>
-      </nav>
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="index.html">Tuur Bellers</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">About</a>
+      <a href="projects.html">Projects</a><a href="resume.html">Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Hi, I’m <span class="grad">Tuur</span>.</h1>
+    <p class="lede">Gameplay & <strong>AI programming</strong> student at Howest DAE. I build responsive gameplay systems and intelligent behaviors that make worlds feel alive.</p>
+  </section>
+
+  <section>
+    <h2>What I do</h2>
+    <div class="grid skills">
+      <article class="card"><h3>Languages</h3><p>C++, C#</p></article>
+      <article class="card"><h3>Engines</h3><p>Unity, Unreal Engine 5</p></article>
+      <article class="card"><h3>AI</h3><p>FSM, Utility AI, Behavior Trees</p></article>
+      <article class="card"><h3>Gameplay</h3><p>Mechanics, feel, iteration, balancing</p></article>
+      <article class="card"><h3>Tools</h3><p>Git, VS, Rider, Blender, Photoshop</p></article>
+      <article class="card"><h3>Team</h3><p>Agile, code reviews, feature ownership</p></article>
     </div>
-  </header>
+  </section>
+</main>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Hi, I’m <span class="grad">Tuur</span>.</h1>
-      <p class="lede">Gameplay & <strong>AI programming</strong> student at Howest DAE. I like turning ideas into responsive mechanics and building systems that make worlds feel alive.</p>
-    </section>
-
-    <section>
-      <h2>What I do</h2>
-      <div class="grid skills">
-        <article class="card"><h3>Languages</h3><p>C++, C#</p></article>
-        <article class="card"><h3>Engines</h3><p>Unity, Unreal Engine 5</p></article>
-        <article class="card"><h3>AI</h3><p>FSM, Utility AI, Behavior Trees</p></article>
-        <article class="card"><h3>Gameplay</h3><p>Mechanics, feel, iteration, balancing</p></article>
-        <article class="card"><h3>Tools</h3><p>Git, VS, Rider, Blender, Photoshop</p></article>
-        <article class="card"><h3>Team</h3><p>Agile, code reviews, feature ownership</p></article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div>
-  </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+<footer class="foot"><div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

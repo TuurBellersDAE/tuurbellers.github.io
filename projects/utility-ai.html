@@ -15,7 +15,12 @@
 
 <main class="container">
   <section class="proj-hero">
-    <div class="proj-media"><img src="../assets/utility-thumb.jpg" alt="Utility AI screenshot"></div>
+    <div class="proj-media">
+      <!-- Looping hero video (silent) -->
+      <video autoplay muted loop playsinline poster="../assets/utility-thumb.jpg">
+        <source src="../assets/utility-demo.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div>
       <h1>Utility AI — Autonomous Agent (C++)</h1>
       <p class="lede">Hybrid FSM + Utility AI for a zombie survival game. The agent evaluates context each frame to explore, collect items, flee, or engage.</p>
@@ -25,25 +30,24 @@
   </section>
 
   <section class="card video">
-    <div class="fluid">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Utility AI Demo"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    <h2>Demo</h2>
+    <video controls playsinline preload="metadata" poster="../assets/utility-thumb.jpg">
+      <source src="../assets/utility-demo.mp4" type="video/mp4" />
+    </video>
   </section>
 
   <section class="two-col">
     <div class="card">
       <h2>Goal</h2>
-      <p>Build an autonomous agent that survives through robust decision-making. I combine a high-level FSM (Explore/Attack/Flee) with a per-state Utility AI that scores actions and executes the best one every frame.</p>
+      <p>Build an autonomous agent that survives through robust decision-making. I combined a high-level FSM (Explore/Attack/Flee) with a per-state Utility AI that scores actions and executes the best one every frame.</p>
     </div>
     <div class="card">
       <h2>My Role</h2>
       <ul class="tight">
-        <li>Designed Utility AI (scoring, selection loop)</li>
+        <li>Designed Utility AI (scoring & selection loop)</li>
         <li>Integrated FSM states with action sets</li>
         <li>Implemented item handling, survival priorities, steering</li>
-        <li>Debug UI + tunables for iteration</li>
+        <li>Built debug UI & tunables for iteration</li>
       </ul>
     </div>
   </section>

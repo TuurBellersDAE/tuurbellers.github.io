@@ -4,13 +4,14 @@
   --rad:16px; --shadow:0 10px 30px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:#0b0c10;color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif}
+html,body{margin:0;background:#0b0c10;color:var(--fg);font:16px/1.65 system-ui,-apple-system,Inter,Segoe UI,Roboto,Arial,sans-serif}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .container{max-width:1080px;margin:0 auto;padding:24px}
 
 /* Top bar */
-.topbar{position:sticky;top:0;z-index:30;background:rgba(11,12,16,.75);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--ring)}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(11,12,16,.75);
+  backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--ring)}
 .navrow{display:flex;align-items:center;gap:16px}
 .brand{font-weight:800;letter-spacing:.2px}
 .nav{margin-left:auto;display:flex;gap:18px}
@@ -20,36 +21,44 @@ a{color:inherit;text-decoration:none}
 /* Hero */
 .hero{padding:40px 0 10px}
 .hero h1{font-size:44px;margin:0 0 10px;line-height:1.1}
-.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{max-width:75ch}
 
 /* Sections */
 h2{margin:26px 0 12px;font-size:24px}
 .subtle{color:var(--muted);margin:4px 0 12px}
 
-/* Chips & grids */
+/* Grids & cards */
 .grid{display:grid;gap:16px}
 .skills{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:var(--panel);border:1px solid var(--ring);border-radius:var(--rad);padding:16px;box-shadow:var(--shadow)}
-.card h3{margin:0 0 6px}
-
-/* Project cards */
 .cards{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.media{display:block;aspect-ratio:16/9;background:#0b0c10;overflow:hidden;border-radius:12px;border:1px solid var(--ring)}
-.media img{width:100%;height:100%;object-fit:cover}
+.card{background:var(--panel);border:1px solid var(--ring);border-radius:var(--rad);
+  padding:16px;box-shadow:var(--shadow)}
+.card h3,.card h4{margin:0 0 6px}
 .tags{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
-.tags span{font-size:12px;padding:4px 10px;border:1px solid var(--ring);border-radius:999px;color:var(--muted)}
+.tags span{font-size:12px;padding:4px 10px;border:1px solid var(--ring);
+  border-radius:999px;color:var(--muted)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-.btn{padding:10px 12px;border:1px solid var(--ring);border-radius:12px;background:transparent;color:var(--fg);font-weight:800}
+.btn{padding:10px 12px;border:1px solid var(--ring);border-radius:12px;background:transparent;
+  color:var(--fg);font-weight:800}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
 .btn.ghost{opacity:.9}
+
+/* Media blocks */
+.media{display:block;aspect-ratio:16/9;background:#0b0c10;overflow:hidden;border-radius:12px;border:1px solid var(--ring)}
+.media img{width:100%;height:100%;object-fit:cover}
 
 /* Project detail */
 .proj-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:12px}
 .proj-media{background:var(--panel);border:1px solid var(--ring);border-radius:var(--rad);overflow:hidden}
 .meta{color:var(--muted);font-weight:700}
-.video .fluid{position:relative;padding-top:56.25%}
-.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* Videos */
+.video video{width:100%;height:auto;display:block;border:0;border-radius:12px}
+.proj-media video{width:100%;height:auto;display:block}
+
+/* Two-column */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 ul.tight{margin:0 0 0 18px}
 
@@ -57,6 +66,7 @@ ul.tight{margin:0 0 0 18px}
 .foot{border-top:1px solid var(--ring);margin-top:24px}
 .foot small{color:var(--muted)}
 
+/* Accessibility / responsive */
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
 @media(max-width:900px){ .proj-hero,.two-col{grid-template-columns:1fr} }
 @media(max-width:520px){ .hero h1{font-size:34px} }

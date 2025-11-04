@@ -1,95 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shrimpact — Project | Tuur Bellers</title>
-  <link rel="stylesheet" href="../styles.css" />
-  <script defer src="../script.js"></script>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Shrimpact — Tuur Bellers</title>
+  <link rel="stylesheet" href="../styles.css"/><script defer src="../script.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav-row">
-      <a class="brand" href="../index.html#projects">← Back to Projects</a>
-      <nav class="nav">
-        <a target="_blank" href="https://github.com/TuurBellersDAE/Shrimpact">Code</a>
-        <a target="_blank" href="https://jelleadyns.itch.io/shrimpact">Play</a>
-      </nav>
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="../projects.html">← Back to Projects</a>
+    <nav class="nav">
+      <a target="_blank" href="https://github.com/TuurBellersDAE/Shrimpact">Code</a>
+      <a target="_blank" href="https://jelleadyns.itch.io/shrimpact">Play</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="proj-hero">
+    <div class="proj-media">
+      <video autoplay muted loop playsinline poster="../assets/shrimpact-thumb.jpg">
+        <source src="../assets/shrimpact-demo.mp4" type="video/mp4" />
+      </video>
     </div>
-  </header>
+    <div>
+      <h1>Shrimpact (Unity)</h1>
+      <p class="lede">Two-player arena brawler built by a 6-person team. I implemented reactive environmental mechanics and a background fish-school AI.</p>
+      <div class="tags"><span>Unity</span><span>Gameplay</span><span>Team</span></div>
+      <p class="meta">2024</p>
+    </div>
+  </section>
 
-  <main class="container project">
-    <section class="project-hero">
-      <div class="hero-media">
-        <img src="../assets/shrimpact-thumb.jpg" alt="Shrimpact screenshot">
-      </div>
-      <div class="hero-text">
-        <h1>Shrimpact (Unity)</h1>
-        <p class="lede">Two-player arena brawler built by a 6-person team. I implemented reactive environmental
-          mechanics and a background fish-school AI to enhance atmosphere and match flow.</p>
-        <div class="tags"><span>Unity</span><span>Gameplay</span><span>Team</span></div>
-        <p class="meta">2024</p>
-      </div>
-    </section>
+  <section class="card video">
+    <h2>Gameplay Video</h2>
+    <video controls playsinline preload="metadata" poster="../assets/shrimpact-thumb.jpg">
+      <source src="../assets/shrimpact-demo.mp4" type="video/mp4" />
+    </video>
+  </section>
 
-    <section>
-      <h2>Gameplay Video</h2>
-      <div class="card video">
-        <div class="fluid">
-          <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="Shrimpact Gameplay"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
+  <section class="two-col">
+    <div class="card">
+      <h2>My Role</h2>
+      <ul class="tight">
+        <li>Designed & built interactive environmental systems</li>
+        <li>Created lightweight fish-school AI for ambient motion</li>
+        <li>Collaborated with art/design to maintain clarity</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Tech Stack</h2>
+      <ul class="tight">
+        <li>Unity (C#), Git</li>
+        <li>Team: 3 programmers, 1 tech artist, 2 style artists</li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="two-col">
-      <div>
-        <h2>My Role</h2>
-        <div class="card">
-          <ul>
-            <li>Designed & built interactive environmental systems</li>
-            <li>Created lightweight fish-school AI for ambient motion</li>
-            <li>Collaborated with art/design to maintain clarity</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h2>Tech Stack</h2>
-        <div class="card">
-          <ul>
-            <li>Unity (C#), Git</li>
-            <li>Team: 3 programmers, 1 tech artist, 2 style artists</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>Highlights</h2>
+    <ul class="tight">
+      <li>Readable, reactive hazards that drive tension</li>
+      <li>Ambient AI that adds life without stealing focus</li>
+      <li>Fast iteration cycle with playtest feedback</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Highlights</h2>
-      <div class="card">
-        <ul>
-          <li>Readable, reactive hazards that drive tension</li>
-          <li>Ambient AI that adds life without stealing focus</li>
-          <li>Fast iteration cycle with playtest feedback</li>
-        </ul>
-      </div>
-    </section>
+  <div class="actions">
+    <a class="btn" target="_blank" href="https://github.com/TuurBellersDAE/Shrimpact">View Code</a>
+    <a class="btn ghost" href="../projects.html">Back</a>
+  </div>
+</main>
 
-    <section>
-      <div class="actions">
-        <a class="btn" target="_blank" href="https://github.com/TuurBellersDAE/Shrimpact">View Code</a>
-        <a class="btn ghost" href="../index.html#projects">Back</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<footer class="foot"><div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
