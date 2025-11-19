@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tower Defense — Tuur Bellers</title>
+  <link rel="stylesheet" href="../styles.css"/><script defer src="../script.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="../projects.html">← Back to Projects</a>
+    <nav class="nav"><a target="_blank" href="https://github.com/TuurBellersDAE/GEP_UnityProject">Code</a></nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Hero section: static thumbnail -->
+  <section class="proj-hero">
+    <div class="proj-media">
+      <img src="towerdefense-thumb.png">
+    </div>
+    <div>
+      <h1>Tower Defense (Unity)</h1>
+      <p class="lede">
+        My first Unity game: a solo-built tower defense prototype where I handled almost all of the programming and game design.
+      </p>
+      <div class="tags"><span>Unity</span><span>C#</span><span>NavMesh</span><span>Gameplay</span></div>
+      <p class="meta">Solo project — 2025</p>
+    </div>
+  </section>
+
+  <!-- Demo section -->
+  <section class="card video">
+    <h2>Gameplay Demo</h2>
+    <video
+      controls
+      muted
+      playsinline
+      preload="none"
+      poster="towerdefense-thumb.png">
+      <source src="towerdefense-demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="two-col">
+    <div class="card">
+      <h2>Gameplay Loop</h2>
+      <ul class="tight">
+        <li>Gather wood from trees and earn gold by defeating enemies.</li>
+        <li>Trade with an NPC to upgrade your tower’s defenses and attacks.</li>
+        <li>Hire allies from another NPC who march via NavMesh to assault the opposing tower.</li>
+        <li>Hunt sheep to keep hunger and health in check while managing the battlefield.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Tech Highlights</h2>
+      <ul class="tight">
+        <li>Unity C# prototype built primarily solo, using only minimal starter assets.</li>
+        <li>NavMesh-based pathfinding for enemies and recruited allies.</li>
+        <li>Interactable NPC flows for tower upgrades and ally recruitment.</li>
+        <li>Lightweight resource and combat systems tuned for quick sessions.</li>
+        <li>Small inventory system with limited functionality.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Notes</h2>
+    <p>This was my first Unity project, and the core game idea was entirely my own. I owned the programming and gameplay tuning end-to-end, from harvesting and economy balancing to NPC interactions and combat.</p>
+    
+  </section>
+
+  <div class="actions">
+    <a class="btn ghost" href="https://github.com/TuurBellersDAE/GEP_UnityProject">View Code</a>
+    <a class="btn ghost" href="../projects.html">Back</a>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <small>&copy; <span id="y"></span> Tuur Bellers</small>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
